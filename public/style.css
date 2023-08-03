@@ -188,11 +188,11 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
-/*
+
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit,minmax(250px, 1fr));
+    grid-template-columns: repeat(3,minmax(250px, 2fr));
+    grid-template-rows: repeat(2,minmax(250px, 2fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -202,7 +202,8 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    width: 100%;
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -246,32 +247,23 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
-}*/
+}
+/*
 .work-list {
-    /*
+    
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns 
-    grid-gap: 40px;*/
+    /*grid-template-columns: repeat(2, 1fr);  Two equal-width columns 
+    grid-gap: 40px;
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: calc(33.33% - 20px); /* Adjust the width of each work item, accounting for margins */
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .work {
-    /*display: flex;grid;
-    grid-template-columns: 1fr 2fr; /* Image and Text Columns */
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /*Image and Text Columns 
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 50px;
-    flex-basis: 30%;
+    /*display: flex;
 }
 
 .work img {
@@ -282,15 +274,15 @@ nav ul li a:hover::after{
 
 .layer {
     /*background: linear-gradient(rgb(0, 0, 0, 0.6), #ff004f);
-    border-radius: 10px;*/
+    border-radius: 10px;
     padding: 40px;
     color: white;
     font-size: 16px;
-    text-align: left; /* Align text to the left */
+    text-align: left; /* Align text to the left 
 }
 
 .layer h3 {
-    /*font-weight: 800;*/
+    /*font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -300,21 +292,21 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    /*background: #fff;*/
+    /*background: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
 }
 
-/* Remove hover effects */
+/* Remove hover effects 
 .work img:hover {
     transform: none;
 }
 
 .work .layer {
     height: 100%;
-}
+}*/
 
 .btn{
     display: block;
