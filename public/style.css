@@ -4,6 +4,9 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background: #080808;
@@ -24,7 +27,7 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 .logo{
@@ -92,6 +95,7 @@ nav ul li a:hover::after{
 .about-me{
     font-size: 18px;
     margin-top: 10px;
+    line-height: 1.6;
 }
 .sub-title{
     font-size: 60px;
