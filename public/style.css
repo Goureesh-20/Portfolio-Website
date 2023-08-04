@@ -39,8 +39,8 @@ nav{
 nav h1 {
     position: absolute;
     top: 10px;
-    left: 10px;
-    margin: 10px 130px; /* Reset the default margin for h1 */
+    left: 120px;
+    /*margin: 10px 120px;  Reset the default margin for h1 */
     text-align: left;
     font-size: 50pt;
 }
@@ -336,10 +336,15 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 
 /*-----------------------------css for small screen------*/
 @media only screen and (max-width: 600px){
     .header{
-        background-image: url();
+        background-image: url(images/test4.png);
     }
 }
