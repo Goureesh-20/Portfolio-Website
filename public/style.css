@@ -12,23 +12,24 @@ body{
     background: #080808;
     color: #fff;
 }
+/*
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/test4.png);
-    background-size: cover;
-    background-size: auto 35vw;
-    background-position: right;
-    background-repeat: no-repeat;
-}
+    /*background-image: url(./images/test4.png);
+
+}*/
 .container{
     padding: 10px 10%;
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20 px;
+    position: relative;
 }
 .logo{
     width: 140px;
@@ -37,17 +38,28 @@ nav{
     left: 10px;
 }
 nav h1 {
-    position: absolute;
-    top: 10px;
-    left: 120px;
+    /*position: absolute;*/
+    /*top: 10px;
+    left: 10px;
     /*margin: 10px 120px;  Reset the default margin for h1 */
     text-align: left;
     font-size: 50pt;
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 nav ul li{
-    display: inline-block;
-    list-style: none;
+    /*display: inline-block;
+    list-style: none;*/
     margin: 10px 20px;
+    text-align: end;
+    /*justify-content: flex-end;*/
 }
 nav ul li a{
     color: #fff;
@@ -68,9 +80,17 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.header-content {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    /*flex-basis: 100%; /* Adjust as needed */
+}
 .header-text{
-    margin-top: 20%;
+    flex: 1; /* Take up available space on the row */
     font-size: 30px;
+    /*margin-top: 20px;
+   /* margin-right: 20px; /* Add spacing between text and image */
 }
 .header-text h1{
     font-size: 60px;
@@ -78,6 +98,20 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #ff004f;
+}
+
+.background-image{
+    flex-grow: 1; /* Allow the image to grow and take available space */
+    text-align: right;
+   /* align-items: right;*/
+}
+
+.background-image img{
+    margin-top: 0px;
+    margin-left: 200px;
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 15px;
 }
 /*--- -----------------About--------------------- */
 #about{
@@ -343,8 +377,47 @@ form .btn2{
 }
 
 /*-----------------------------css for small screen------*/
-@media only screen and (max-width: 600px){
-    .header{
-        background-image: url(images/test4.png);
-    }
+
+nav .fa-solid{
+    display: none;
 }
+/*
+@media only screen and (max-width: 800px){
+    /*#header{
+        background-image: url(images/test4.png);
+        background-repeat: no-repeat; /* Prevent image from repeating 
+        background-size: cover;
+    }
+    .header-text{
+        margin-top: 10%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 60px;
+    }
+    .background-image{
+       /* flex-grow: 1; /* Allow the image to grow and take available space 
+        text-align: right;
+        align-items: right;
+        display: none;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 30;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        
+    }
+}*/
+
